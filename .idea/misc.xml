@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CreateIt-/app/src/main/res/drawable/bg_btn_blue_primary.xml" value="0.22135416666666666" />
+        <entry key="..\:/CreateIt-/app/src/main/res/drawable/bg_gradient_primary_blue.xml" value="0.22135416666666666" />
+        <entry key="..\:/CreateIt-/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/CreateIt-/app/src/main/res/layout/activity_get_started.xml" value="0.20520833333333333" />
+        <entry key="..\:/CreateIt-/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/CreateIt-/app/src/main/res/layout/activity_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/CreateIt-/app/src/main/res/layout/content_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/CreateIt-/app/src/main/res/layout/note_dialog.xml" value="0.20520833333333333" />
+        <entry key="..\:/CreateIt-/app/src/main/res/layout/note_list_row.xml" value="0.67" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/../CreateIt/!/build/classes" />
+    <output url="file://$PROJECT_DIR$/../createit/!/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />

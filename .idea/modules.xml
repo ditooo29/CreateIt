@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../CreateIt/!/.idea/modules/CreateIt!.iml" filepath="$PROJECT_DIR$/../CreateIt/!/.idea/modules/CreateIt!.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CRUD_SQLite_Database.iml" filepath="$PROJECT_DIR$/.idea/modules/CRUD_SQLite_Database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CRUD_SQLite_Database.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CRUD_SQLite_Database.app.iml" />
     </modules>
   </component>
 </project>

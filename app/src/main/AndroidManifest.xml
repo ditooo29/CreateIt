@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.notesave">
+    package="com.example.CreateIt">
 
     <application
         android:allowBackup="true"
@@ -12,12 +12,12 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".MenuAct"
+            android:name="com.example.CreateIt.MenuAct"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.CreateIt.MainActivity"
             android:exported="true" />
-        <activity android:name=".GetStartedAct">
+        <activity android:name="com.example.CreateIt.GetStartedAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

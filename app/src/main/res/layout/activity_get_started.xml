@@ -6,14 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".GetStartedAct">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="414dp"
+        android:layout_height="715dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/opening"
+        tools:layout_editor_absoluteX="-2dp" />
+
     <Button
         android:id="@+id/btn_start"
         android:layout_width="274dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="192dp"
         android:background="@drawable/bg_btn_blue_primary"
         android:fontFamily="@font/mmedium"
-        android:text="@string/start"
+        android:text="Lets Get Started"
         android:textColor="#FFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,24 +33,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="188dp"
+        android:layout_height="391dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Start Your Creation!"
-        android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
