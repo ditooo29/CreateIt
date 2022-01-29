@@ -1,16 +1,41 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.huawei.agconnect'
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.example.notesave"
+        applicationId "com.example.notesave.huawei"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        release {
+            storeFile file('HmsDemo.jks')
+            keyAlias 'hmsdemo'
+            keyPassword '123456'
+            storePassword '123456'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -32,3 +57,4 @@ dependencies {
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'com.google.android.material:material:1.2.0-alpha05'
 }
+

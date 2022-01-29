@@ -1,2 +1,11 @@
 include ':app'
 rootProject.name='CRUD SQLite Database'
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+}
