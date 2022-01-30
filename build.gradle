@@ -3,7 +3,6 @@
 buildscript {
     repositories {
         google()
-        mavenCentral()
         jcenter()
         // Configure the Maven repository address for the HMS Core SDK.
         maven {url 'https://developer.huawei.com/repo/'}
@@ -20,7 +19,6 @@ buildscript {
 allprojects {
     repositories {
         google()
-        mavenCentral()
         jcenter()
         // Configure the Maven repository address for the HMS Core SDK.
         maven {url 'https://developer.huawei.com/repo/'}

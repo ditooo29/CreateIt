@@ -12,6 +12,23 @@
         <entry key="..\:/CreateIt-/app/src/main/res/layout/content_main.xml" value="0.20520833333333333" />
         <entry key="..\:/CreateIt-/app/src/main/res/layout/note_dialog.xml" value="0.20520833333333333" />
         <entry key="..\:/CreateIt-/app/src/main/res/layout/note_list_row.xml" value="0.67" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/drawable-anydpi/ic_add.xml" value="0.3828125" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/drawable/bg_btn_blue_primary.xml" value="0.3828125" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/drawable/bg_btn_plus_blue.xml" value="0.3828125" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/drawable/bg_btn_white_primary.xml" value="0.3828125" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/drawable/bg_gradient_primary_blue.xml" value="0.3828125" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/drawable/bg_gradient_primary_green.xml" value="0.3828125" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/drawable/bg_overlay_getstarted.xml" value="0.3828125" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/layout/activity_get_started.xml" value="0.36666666666666664" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/layout/activity_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/layout/note_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/layout/note_list_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
+        <entry key="..\:/CreateItHuaweiApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
       </map>
     </option>
   </component>
