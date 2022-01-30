@@ -67,6 +67,9 @@ public class MenuAct extends AppCompatActivity {
         if (permissions == null || grantResults == null || grantResults.length < 2 || grantResults[0] != PackageManager.PERMISSION_GRANTED || grantResults[1] != PackageManager.PERMISSION_GRANTED) {
             return;
         }
+        if(requestCode == DEFAULT_VIEW){
+            ScanUtil.startScan(MenuAct.this, REQUEST_CODE_SCAN, new HmsScanAnalyzerOptions.Creator().setHmsScanTypes(HmsScan.ALL_SCAN_TYPE).create());
+        }
     }
 
    // int result = ScanUtil.startScan(MenuAct.this, REQUEST_CODE_SCAN, new HmsScanAnalyzerOptions.Creator().setHmsScanTypes(HmsScan.ALL_SCAN_TYPE).create());
@@ -90,18 +93,6 @@ public class MenuAct extends AppCompatActivity {
             }
         }
 
-    }
-
-
-
-
-    //
-
-    //Exit apps
-    public void onBackPressed() {
-        moveTaskToBack(true);
-        android.os.Process.killProcess(android.os.Process.myPid());
-        System.exit(1);
     }
 
 
