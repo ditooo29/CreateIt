@@ -18,7 +18,7 @@ import com.huawei.hms.hmsscankit.ScanUtil;
 import com.huawei.hms.ml.scan.HmsScan;
 import com.huawei.hms.ml.scan.HmsScanAnalyzerOptions;
 
-public class MenuAct extends AppCompatActivity {
+public class MainMenu extends AppCompatActivity {
 
     LinearLayout btn_notebook;
     TextView textView2;
@@ -27,7 +27,7 @@ public class MenuAct extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.main_menu);
 
         btn_notebook = findViewById(R.id.btn_notebook);
         textView2 = findViewById(R.id.textView2);
@@ -35,7 +35,7 @@ public class MenuAct extends AppCompatActivity {
         btn_notebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent gotonote = new Intent(MenuAct.this,MainActivity.class);
+                Intent gotonote = new Intent(MainMenu.this,MainActivity.class);
                 startActivity(gotonote);
             }
         });
@@ -43,7 +43,7 @@ public class MenuAct extends AppCompatActivity {
         textView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent gotomenu2 = new Intent(MenuAct.this,MenuAct.class);
+                Intent gotomenu2 = new Intent(MainMenu.this, MainMenu.class);
                 startActivity(gotomenu2);
             }
         });
@@ -68,7 +68,7 @@ public class MenuAct extends AppCompatActivity {
             return;
         }
         if(requestCode == DEFAULT_VIEW){
-            ScanUtil.startScan(MenuAct.this, REQUEST_CODE_SCAN, new HmsScanAnalyzerOptions.Creator().setHmsScanTypes(HmsScan.ALL_SCAN_TYPE).create());
+            ScanUtil.startScan(MainMenu.this, REQUEST_CODE_SCAN, new HmsScanAnalyzerOptions.Creator().setHmsScanTypes(HmsScan.ALL_SCAN_TYPE).create());
         }
     }
 
