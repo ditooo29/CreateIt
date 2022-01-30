@@ -23,6 +23,12 @@ android {
             v1SigningEnabled true
             v2SigningEnabled true
         }
+        config {
+            storeFile file('D:/HuaweiCreateIt/app/HmsDemo.jks')
+            storePassword '123456'
+            keyPassword '123456'
+            keyAlias 'HmsDemo'
+        }
     }
 
     buildTypes {

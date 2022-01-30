@@ -50,48 +50,6 @@ public class MainActivity extends AppCompatActivity {
     
     //
 
-//    private static final int DEFAULT_VIEW = 0x22;
-//    private static final int REQUEST_CODE_SCAN = 0x01;
-//
-//    public void newViewBtnClick(View view) {
-//        // Replace DEFAULT_VIEW with the code that you customize for receiving the permission verification result.
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//            this.requestPermissions(
-//                    new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE},
-//                    DEFAULT_VIEW);
-//        }
-//    }
-//    @Override
-//    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-//        if (permissions == null || grantResults == null || grantResults.length < 2 || grantResults[0] != PackageManager.PERMISSION_GRANTED || grantResults[1] != PackageManager.PERMISSION_GRANTED) {
-//            return;
-//        }
-//    }
-//
-////    int result = ScanUtil.startScan(MainActivity.this, REQUEST_CODE_SCAN, new HmsScanAnalyzerOptions.Creator().setHmsScanTypes(HmsScan.ALL_SCAN_TYPE).create());
-//
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        // Process the result after the scanning is complete.
-//        super.onActivityResult(requestCode, resultCode, data);
-//        if (resultCode != RESULT_OK || data == null) {
-//            return;
-//        }
-//        // Use ScanUtil.RESULT as the key value to obtain the return value of HmsScan from data returned by the onActivityResult method.
-//        if (requestCode == REQUEST_CODE_SCAN) {
-//            Object obj = data.getParcelableExtra(ScanUtil.RESULT);
-//            if (obj instanceof HmsScan) {
-//                if (!TextUtils.isEmpty(((HmsScan) obj).getOriginalValue())) {
-//                    Toast.makeText(this, ((HmsScan) obj).getOriginalValue(),
-//                            Toast.LENGTH_SHORT).show();
-//                }
-//                return;
-//            }
-//        }
-//
-//    }
-
-
     //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,11 +93,6 @@ public class MainActivity extends AppCompatActivity {
 
         toggleEmptyNotes();
 
-        /**
-         * On press on RecyclerView item, open alert dialog
-         * with options to choose
-         * Edit and Delete
-         * */
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(this,
                 recyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
@@ -156,10 +109,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Inserting new note in db
-     * and refreshing the list
-     */
     private void createNote(String note) {
         // inserting note in db and getting
         // newly inserted note id
@@ -179,10 +128,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * Updating note in db and updating
-     * item in the list by its position
-     */
     private void updateNote(String note, int position) {
         Note n = notesList.get(position);
         // updating note text
@@ -198,10 +143,6 @@ public class MainActivity extends AppCompatActivity {
         toggleEmptyNotes();
     }
 
-    /**
-     * Deleting note from SQLite and removing the
-     * item from the list by its position
-     */
     private void deleteNote(int position) {
         // deleting the note from db
         db.deleteNote(notesList.get(position));
@@ -213,11 +154,6 @@ public class MainActivity extends AppCompatActivity {
         toggleEmptyNotes();
     }
 
-    /**
-     * Opens dialog with Edit - Delete options
-     * Edit - 0
-     * Delete - 0
-     */
     private void showActionsDialog(final int position) {
         CharSequence colors[] = new CharSequence[]{"Edit", "Delete"};
 
@@ -236,13 +172,6 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
     }
 
-
-    /**
-     * Shows alert dialog with EditText options to enter / edit
-     * a note.
-     * when shouldUpdate=true, it automatically displays old note and changes the
-     * button text to UPDATE
-     */
     private void showNoteDialog(final boolean shouldUpdate, final Note note, final int position) {
         LayoutInflater layoutInflaterAndroid = LayoutInflater.from(getApplicationContext());
         View view = layoutInflaterAndroid.inflate(R.layout.note_dialog, null);
@@ -297,9 +226,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Toggling list and empty notes view
-     */
     private void toggleEmptyNotes() {
         // you can check notesList.size() > 0
 

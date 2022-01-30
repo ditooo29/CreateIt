@@ -1,4 +1,10 @@
 {
+	"agcgw":{
+		"backurl":"connect-drcn.hispace.hicloud.com",
+		"url":"connect-drcn.dbankcloud.cn",
+		"websocketbackurl":"connect-ws-drcn.hispace.dbankcloud.com",
+		"websocketurl":"connect-ws-drcn.hispace.dbankcloud.cn"
+	},
 	"agcgw_all":{
 		"CN":"connect-drcn.dbankcloud.cn",
 		"CN_back":"connect-drcn.hispace.hicloud.com",
@@ -15,32 +21,53 @@
 		"client_id":"815113475285074816",
 		"client_secret":"434007DEA6805C11B1912792CD5AD24A65179E76B533CCCC196A1DE93514492B",
 		"project_id":"737518067794444888",
-		"app_id":"105456395",
+		"app_id":"105456553",
 		"api_key":"DAEDAIZbvdGuHUgnPdsnYrdVAJsU+nhsPxkEzCoNSQ5BlNVwCvBcbK/T6jeJlbkfPnO/1L54CilnUU/m1+GU/M+dKwTLMpJWAOTP4g==",
 		"package_name":"com.example.notesave.huawei"
 	},
 	"oauth_client":{
-		"client_id":"105456395",
+		"client_id":"105456553",
 		"client_type":1
 	},
 	"app_info":{
-		"app_id":"105456395",
+		"app_id":"105456553",
 		"package_name":"com.example.notesave.huawei"
 	},
+	"service":{
+		"analytics":{
+			"collector_url":"datacollector-drcn.dt.hicloud.com,datacollector-drcn.dt.dbankcloud.cn",
+			"collector_url_ru":"datacollector-drru.dt.hicloud.com,datacollector-drru.dt.dbankcloud.cn",
+			"collector_url_sg":"datacollector-dra.dt.hicloud.com,datacollector-dra.dt.dbankcloud.cn",
+			"collector_url_de":"datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn",
+			"collector_url_cn":"datacollector-drcn.dt.hicloud.com,datacollector-drcn.dt.dbankcloud.cn",
+			"resource_id":"p1",
+			"channel_id":""
+		},
+		"search":{
+			"url":"https://search-drcn.cloud.huawei.com"
+		},
+		"cloudstorage":{
+			"storage_url":"https://agc-storage-drcn.platform.dbankcloud.cn"
+		},
+		"ml":{
+			"mlservice_url":"ml-api-drcn.ai.dbankcloud.com,ml-api-drcn.ai.dbankcloud.cn"
+		}
+	},
+	"region":"CN",
 	"configuration_version":"3.0",
 	"appInfos":[
 		{
 			"package_name":"com.example.notesave.huawei",
 			"client":{
-				"app_id":"105456395"
+				"app_id":"105456553"
 			},
 			"app_info":{
 				"package_name":"com.example.notesave.huawei",
-				"app_id":"105456395"
+				"app_id":"105456553"
 			},
 			"oauth_client":{
 				"client_type":1,
-				"client_id":"105456395"
+				"client_id":"105456553"
 			}
 		}
 	]

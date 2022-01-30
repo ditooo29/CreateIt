@@ -42,3 +42,14 @@
 "R.dimen.upsdk*",
 "R.style.upsdk*",
 "R.string.agc*"
+-keepattributes SourceFileLineNumberTable,
+-keep class com.hianalytics.android.**{*;}
+-keep class com.huawei.hms.**{*;}
+
+-keep class com.huawei.**{*;}
+
+
+
+
+
+
